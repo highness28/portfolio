@@ -54,6 +54,15 @@ function App() {
               <a href='https://www.facebook.com/Highness28' style={{ textDecoration: 'none', color: 'skyBlue' }}>Facebook Profile</a>
             </Container>  
           </Flex>
+
+          <Flex style={{ margin: '15px 0' }}>
+            <Container>
+              <b>Started</b> developing this website on <b>January 19, 2020 1:25AM GMT+8</b>
+            </Container>
+            <Container>
+              <b>Last updated</b> this website on <b>January 19, 2020 2:32AM GMT+8</b>
+            </Container>
+          </Flex>
         </Card>
       </header>
     </div>
