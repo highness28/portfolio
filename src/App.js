@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.css'
+import avatar from './assets/images/avatar.jpg'
+import styled from '@emotion/styled'
+
+const AvatarContianer = styled.div({
+  backgroundColor: 'white',
+  padding: 10,
+  borderRadius: 210
+})
+
+const Avatar = styled.div({
+  backgroundImage: `url(${avatar})`,
+  backgroundSize: 'cover',
+  borderRadius: 200,
+  height: 400,
+  width: 400
+})
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <AvatarContianer>
+          <Avatar />
+        </AvatarContianer>
       </header>
     </div>
   );
 }
 
-export default App;
+export default App
