@@ -1,31 +1,60 @@
 import React from 'react'
 import './App.css'
-import avatar from './assets/images/avatar.jpg'
+import Avatar from './components/Avatar'
+import Card from './components/Card'
 import styled from '@emotion/styled'
 
-const AvatarContianer = styled.div({
-  backgroundColor: 'white',
-  padding: 10,
-  borderRadius: 210
+const Flex = styled.div({
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center'
 })
 
-const Avatar = styled.div({
-  backgroundImage: `url(${avatar})`,
-  backgroundSize: 'cover',
-  borderRadius: 200,
-  height: 400,
-  width: 400
+const Container = styled.div({
+  fontSize: '15px',
+  lineHeight: '1.4',
+  color: '#696969'
 })
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <AvatarContianer>
-          <Avatar />
-        </AvatarContianer>
-        <p>THIS IS STILL UNDER DEVELOPMENT BY ME</p>
-        January 19, 2020 1:25 AM GMT+8
+        <Card>
+          <Flex>
+            <Avatar size='sm' />
+          </Flex>
+          <Flex>
+            <h4 style={{ marginBlockStart: '0.5em', marginBlockEnd: '0.5em' }}>German Manalili</h4>
+          </Flex>
+
+          <Flex style={{ margin: '15px 0' }}>
+            <Container>
+              Full Stack Web Developer
+            </Container>
+            <Container>
+              Invento Software Solutions, Inc.
+            </Container>
+          </Flex>
+
+          <Flex style={{ margin: '15px 0' }}>
+            <Container>
+              Technical Manager
+            </Container>
+            <Container>
+              Novus Software Solutions Inc.
+            </Container>
+          </Flex>
+
+          <Flex style={{ margin: '15px 0' }}>
+            <Container>
+              <a href='https://www.linkedin.com/in/german-manalili-68ba6b133' style={{ textDecoration: 'none', color: 'skyBlue' }}>Linked Profile</a>
+            </Container>
+            <Container>
+              <a href='https://www.facebook.com/Highness28' style={{ textDecoration: 'none', color: 'skyBlue' }}>Facebook Profile</a>
+            </Container>  
+          </Flex>
+        </Card>
       </header>
     </div>
   );
