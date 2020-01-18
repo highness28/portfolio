@@ -24,6 +24,8 @@ function App() {
         <AvatarContianer>
           <Avatar />
         </AvatarContianer>
+        <p>THIS IS STILL UNDER DEVELOPMENT BY ME</p>
+        January 19, 2020 1:25 AM GMT+8
       </header>
     </div>
   );
