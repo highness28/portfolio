@@ -5,7 +5,7 @@ const Card = styled.div({
     borderRadius: 5,
     backgroundColor: "white",
     color: 'black',
-    boxShadow: '0 15px 20px rgba(0, 0, 0, 0.3)'
+    boxShadow: '0 0 3px rgba(0, 0, 0, 0.2)'
 })
 
 export default Card
