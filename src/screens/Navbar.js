@@ -39,6 +39,7 @@ const NavItem = styled.button(({ active }) => ({
     outline: 'none',
     fontWeight: 800,
     padding: '0 10px',
+    width: 100,
     ':hover': {
         backgroundColor: '#f53b57',
         cursor: 'pointer'
