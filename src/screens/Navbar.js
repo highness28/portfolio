@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled'
 import Container from '../components/Container'
+import { NavLink } from "react-router-dom";
 
 const NavbarContainer = styled(Container)({
     height: 60,
@@ -12,11 +13,13 @@ const NavbarContainer = styled(Container)({
     alignItems: 'center'
 })
 
-const NavTitle = styled.h3({
+const NavTitle = styled.span({
     padding: '0 30px',
     color: '#fff',
     fontFamily: 'Tahoma',
-    width: 40
+    fontSize: 24,
+    fontWeight: 'bold',
+    width: 40,
 })
 
 const NavMenuContainer = styled.div({
@@ -31,33 +34,50 @@ const NavMenuContainer = styled.div({
     justifyContent: 'center'
 })
 
-const NavItem = styled.button(({ active }) => ({
-    backgroundColor: 'inherit',
-    border: 'none',
+const NavItem = styled(NavLink)(({ isActive }) => ({
+    alignItems: 'center',
+    backgroundColor: isActive ? '#f53b57' : 'inherit',
     color: '#fff',
+    display: 'flex',
+    fontFamily: 'Arial',
     height: '100%',
+    justifyContent: 'center',
     outline: 'none',
-    fontWeight: 800,
+    fontWeight: 'bold',
+    textDecoration: 'none',
     padding: '0 10px',
     width: 100,
     ':hover': {
         backgroundColor: '#f53b57',
         cursor: 'pointer'
+    },
+    '&.active': {
+        backgroundColor: '#f53b57'
     }
 }))
 
-const Navbar = () => (
-    <NavbarContainer>
-        <NavTitle>
-            Novus
-        </NavTitle>
-        <NavMenuContainer>
-            <NavItem>HOME</NavItem> 
-            <NavItem>ABOUT</NavItem>
-            <NavItem>PROJECTS</NavItem>
-            <NavItem>CONTACT</NavItem>
-        </NavMenuContainer>
-    </NavbarContainer>
-)
+const Navbar = () => {
+    return (
+        <NavbarContainer>
+            <NavTitle>
+                Novus
+            </NavTitle>
+            <NavMenuContainer>
+                <NavItem to='/' exact>
+                    HOME
+                </NavItem>
+                <NavItem to='/about' exact>
+                    ABOUT
+                </NavItem>
+                <NavItem to='/projects' exact>
+                    PROJECTS
+                </NavItem>
+                <NavItem to='/contact' exact>
+                    CONTACT
+                </NavItem>
+            </NavMenuContainer>
+        </NavbarContainer>
+    )
+}
 
 export default Navbar

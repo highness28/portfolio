@@ -2,13 +2,17 @@ import React from 'react'
 import Flex from '../components/Flex'
 import Container from '../components/Container'
 import styled from '@emotion/styled'
+import FooterBackground from '../assets/images/mountain.jpg'
 
 const FooterContainer = styled(Container)({
+    backgroundAttachment: 'fixed',
+    backgroundImage: `url('${FooterBackground}')`,
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: '100% 100%',
+    backgroundColor: 'rgba(0, 0, 0, 0.8)',
+    color: '#fff',
     display: 'flex',
-    background: '#333',
-    borderRadius: 0,
-    color: '#a4a4a4',
-    height: 400,
+    height: 'calc(100vh)',
     padding: 0,
     width: '100%'
 })
@@ -28,7 +32,7 @@ const Footer = () => (
     <FooterContainer>
         <LeftContent>
             Started developing this website on January 19, 2020 1:25 AM GMT+8 | 
-            Last updated this website on January 19, 2020 09:31 PM GMT+8 
+            Last updated this website on January 2, 2020 3:06 AM GMT+8 
         </LeftContent>
         <RightContent>
             &copy; All rights reserve to German Manalili
