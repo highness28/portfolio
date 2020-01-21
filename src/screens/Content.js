@@ -1,9 +1,8 @@
 import React from 'react'
 import styled from '@emotion/styled'
 import Container from '../components/Container'
-import HeaderBackground from '../assets/images/night-sky.jpg'
+import HeaderBackground from '../assets/images/ger.jpg'
 import Parallax from '../components/Parallax'
-import JobDescription from '../screens/JobDescription'
 
 const ContentContainer = styled(Container)({
     minHeight: 'calc(100vh - 60px)',
@@ -11,29 +10,16 @@ const ContentContainer = styled(Container)({
     marginTop: 60
 })
 
-
 const Content = () => (
-    <ContentContainer>  
+    <ContentContainer>
         <Parallax
             background={HeaderBackground}
-            height={300}
-        />
-        <JobDescription />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+            // height='calc(100vh - 300px)'
+        >
+            <div>
+
+            </div>
+        </Parallax>
         <br />
         <br />
         <br />

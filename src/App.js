@@ -6,8 +6,8 @@ import Content from './screens/Content'
 import {
   BrowserView,
   MobileView,
-  isBrowser,
-  isMobile
+  // isBrowser,
+  // isMobile
 } from "react-device-detect"
 
 const App = () => {

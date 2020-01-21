@@ -6,7 +6,7 @@ const Parallax = styled.div(({ background, height }) => ({
     width: '100%',
     backgroundAttachment: 'fixed',
     backgroundRepeat: 'no-repeat',
-    backgroundSize: '100% 100%'
+    backgroundSize: '100% calc(100vh - 60px)'
 }))
 
 export default Parallax

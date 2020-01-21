@@ -29,7 +29,6 @@ const Footer = () => (
         <LeftContent>
             Started developing this website on January 19, 2020 1:25 AM GMT+8 | 
             Last updated this website on January 19, 2020 09:31 PM GMT+8 
-            (Hours worked 4hrs)
         </LeftContent>
         <RightContent>
             &copy; All rights reserve to German Manalili
