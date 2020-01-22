@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled'
 import Container from '../components/Container'
-import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom"
 
 const NavbarContainer = styled(Container)({
     height: 60,

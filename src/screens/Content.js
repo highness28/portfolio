@@ -15,9 +15,19 @@ const ContentContainer = styled(Container)({
     marginTop: 60
 })
 
+
+const Something = ({ children }) => (
+    <div>
+        TESTING
+    </div>
+)
+
 const Content = () => (
     <ContentContainer>
         <Switch>
+            <Route path="/about" component={Something} />
+            <Route path="/projects" component={Something} />
+            <Route path="/contact" component={Something} />
             <Route path="/" component={Home} />
         </Switch>
     </ContentContainer>

@@ -8,7 +8,7 @@ import { BrowserView, MobileView } from "react-device-detect"
 
 const App = () => {
   return (
-    <Router>
+    <Router basename='/portfolio'>
       <Container>
         <BrowserView>
           <Navbar />

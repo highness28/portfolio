@@ -32,7 +32,7 @@ const Footer = () => (
     <FooterContainer>
         <LeftContent>
             Started developing this website on January 19, 2020 1:25 AM GMT+8 | 
-            Last updated this website on January 2, 2020 3:06 AM GMT+8 
+            Last updated this website on January 22, 2020 5:30 PM GMT+8 
         </LeftContent>
         <RightContent>
             &copy; All rights reserve to German Manalili
