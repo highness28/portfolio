@@ -1,5 +1,5 @@
 import React from 'react'
-import HeaderBackground from '../assets/images/ger.jpg'
+import HeaderBackground from '../assets/images/header-animation.gif'
 import Parallax from '../components/Parallax'
 import Flex from '../components/Flex'
 import styled from '@emotion/styled'

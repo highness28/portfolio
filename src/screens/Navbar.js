@@ -60,7 +60,7 @@ const Navbar = () => {
     return (
         <NavbarContainer>
             <NavTitle>
-                Novus
+                Newget
             </NavTitle>
             <NavMenuContainer>
                 <NavItem to='/' exact>
