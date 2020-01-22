@@ -72,6 +72,9 @@ const Navbar = () => {
                 <NavItem to='/projects' exact>
                     PROJECTS
                 </NavItem>
+                <NavItem to='/team' exact>
+                    TEAM
+                </NavItem>
                 <NavItem to='/contact' exact>
                     CONTACT
                 </NavItem>
